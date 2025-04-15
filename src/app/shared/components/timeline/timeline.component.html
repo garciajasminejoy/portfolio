@@ -1,0 +1,10 @@
+<ol>
+    @for (item of items; track $index) {
+    <li>
+        <label>{{ item.label }}</label>
+        @if (timelineContentTemplateRef) {
+        <ng-container *ngTemplateOutlet="timelineContentTemplateRef; context: { $implicit: item }"></ng-container>
+        }
+    </li>
+    }
+</ol>

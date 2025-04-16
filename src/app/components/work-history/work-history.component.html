@@ -1,17 +1,20 @@
-<h3>Work History</h3>
-<p>
-    My roles and responsibilities throughout the years
-</p>
-
-<div class="timeline-container">
-    <app-timeline [items]="workHistory" [timelineContentTemplateRef]="timelineItemTemplate"></app-timeline>
-</div>
-
-<ng-template #timelineItemTemplate let-item="item">
+<div class="work-history">
+    <h3>Work History</h3>
     <p>
-        <b>{{item.name}}</b>
+        My roles and responsibilities throughout the years
     </p>
-    @if (item.description) {
-    <p>{{ item.description }}</p>
-    }
-</ng-template>
+    
+    <div class="timeline-container">
+        <app-timeline [items]="workHistory" [timelineContentTemplateRef]="timelineItemTemplate"></app-timeline>
+    </div>
+    
+    <ng-template #timelineItemTemplate let-item="item">
+        <p class="mb-0 pb-3">
+            <span class="d-block">
+                <b>{{item.name}}</b>
+            </span>
+            <small class="d-block">{{ item.dateRange }}</small>
+            <span [class]="item.description ? 'd-block' : 'd-none'">{{ item.description }}</span>
+        </p>
+    </ng-template>
+</div>

@@ -4,7 +4,7 @@ export const WORK_HISTORY = [
         data: {
             name: 'Emapta Philippines',
             dateRange: 'Aug 2022 - Present',
-            description: '',
+            description: 'lorem ipsum',
             companyLogo: ''
         }
     },

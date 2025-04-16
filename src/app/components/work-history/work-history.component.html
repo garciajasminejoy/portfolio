@@ -3,7 +3,15 @@
     My roles and responsibilities throughout the years
 </p>
 
-<app-timeline [items]="workHistory"></app-timeline>
+<div class="timeline-container">
+    <app-timeline [items]="workHistory" [timelineContentTemplateRef]="timelineItemTemplate"></app-timeline>
+</div>
 
 <ng-template #timelineItemTemplate let-item="item">
+    <p>
+        <b>{{item.name}}</b>
+    </p>
+    @if (item.description) {
+    <p>{{ item.description }}</p>
+    }
 </ng-template>

@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 .timeline {
     position: relative;
 }
@@ -10,11 +12,12 @@
         position: absolute;
         height: 8px;
         width: 8px;
-        background-color: black;
+        background-color: $primary;
         border-radius: 5px;
         translate: 0px -50%;
         margin-right: 1rem;
         top: 11px;
+        z-index: 3;
     }
 
     &:not(:last-child)::after {

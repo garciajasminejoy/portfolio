@@ -1,7 +1,7 @@
 <div class="work-history">
     <h3>Work History</h3>
     <p>
-        My roles and responsibilities throughout the years
+        My roles and responsibilities over the years
     </p>
     
     <div class="timeline-container">
@@ -13,7 +13,7 @@
             <span class="d-block">
                 <b>{{item.name}}</b>
             </span>
-            <small class="d-block">{{ item.dateRange }}</small>
+            <small class="d-block font-italic">{{ item.dateRange }}</small>
             <span [class]="item.description ? 'd-block' : 'd-none'">{{ item.description }}</span>
         </p>
     </ng-template>

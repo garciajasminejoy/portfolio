@@ -1,3 +1,19 @@
 .tech-stack {
     margin-bottom: 5rem;
 }
+
+.tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    &--item {
+        margin-top: 1rem;
+
+        &:not(:last-child) {
+            margin-right: 1.5rem;
+        }
+    }
+}

@@ -1,3 +1,28 @@
+@use 'variables' as *;
+
 .page-section {
     margin-bottom: 5rem;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+
+    &--item {
+        margin-top: 1rem;
+    }
+
+    &--link {
+        text-decoration: none;
+        color: black;
+    }
+
+    &--name {
+        padding-bottom: .2rem;
+        margin-left: 1rem;
+
+        &:hover {
+            border-bottom: 1px solid $primary;
+        }
+    }
 }

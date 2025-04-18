@@ -2,4 +2,15 @@
     <h3>Contact Me</h3>
     <p>I'm not shy. You are! Let's connect!</p>
     <!-- TODO: or reach out via this form below -->
+
+    <div class="socials">
+        @for (social of socials; track $index) {
+        <div class="socials--item">
+            <a [href]="social.url" target="_blank" class="socials--link">
+                <img src="images/icons/{{social.iconFileName}}" [alt]="social.name" width="30">
+                <span class="socials--name">{{ social.accountName }}</span>
+            </a>
+        </div>
+        }
+    </div>
 </div>

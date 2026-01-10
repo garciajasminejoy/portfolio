@@ -1,19 +1,39 @@
+@use 'variables' as *;
+
 .tech-stack {
-    margin-bottom: 5rem;
+  margin-bottom: 5rem;
+}
+
+.text-highlight {
+    color: $primary;
 }
 
 .tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  &--item {
+    display: flex;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    padding: 0 10px;
+
+    img {
+      height: 3rem;
+    }
+  }
+
+  &--tech-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+  }
+
+  &--category {
+    display: block;
     width: 100%;
-
-    &--item {
-        margin-top: 1rem;
-
-        &:not(:last-child) {
-            margin-right: 2rem;
-        }
-    }
+    margin-bottom: 2rem;
+  }
 }

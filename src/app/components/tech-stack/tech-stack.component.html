@@ -1,12 +1,25 @@
 <div class="tech-stack">
-    <h3>My Tech Stack</h3>
-    <!-- <p>Technologies I use.</p> -->
+  <h3 class="text-highlight">My Tech Stack</h3>
+  <!-- <p>Technologies I use.</p> -->
 
-    <div class="tech-list">
-        @for (tech of list; track $index) {
-            <div class="tech-list--item">
-                <img src="images/icons/{{ tech.iconFileName }}" [alt]="tech.name" [title]="tech.name" width="70">
-            </div>
+  <div class="tech-list">
+    @for (techCategory of techStack; track $index) {
+    <div class="tech-list--category">
+      <h4 class="tech-list--category">{{ techCategory.category }}</h4>
+      <div class="tech-list--tech-container">
+        @for (tech of techCategory.items; track $index) {
+        <div class="tech-list--item">
+          <img
+            src="images/icons/{{ tech.iconFileName }}"
+            [alt]="tech.name"
+            [title]="tech.name"
+            width="70"
+          />
+        </div>
         }
+      </div>
     </div>
+
+    }
+  </div>
 </div>

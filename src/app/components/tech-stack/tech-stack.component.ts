@@ -5,58 +5,42 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './tech-stack.component.html',
-  styleUrl: './tech-stack.component.scss'
+  styleUrl: './tech-stack.component.scss',
 })
 export class TechStackComponent {
-
-  list = [
+  techStack = [
     {
-      name: 'Angular',
-      iconFileName: 'angular-icon.svg'
+      category: 'Frontend Development',
+      items: [
+        { name: 'Angular', iconFileName: 'angular-icon.svg' },
+        { name: 'TypeScript', iconFileName: 'typescript-icon.svg' },
+        { name: 'HTML', iconFileName: 'html-5.svg' },
+        { name: 'CSS', iconFileName: 'css-3.svg' },
+        { name: 'Bootstrap', iconFileName: 'bootstrap.svg' },
+        { name: 'RxJS', iconFileName: 'reactivex.svg' },
+      ],
     },
     {
-      name: 'HTML',
-      iconFileName: 'html-5.svg'
+      category: 'Backend Development',
+      items: [
+        { name: 'NodeJS', iconFileName: 'nodejs-icon.svg' },
+        { name: 'Laravel', iconFileName: 'laravel.svg' },
+      ],
     },
     {
-      name: 'CSS',
-      iconFileName: 'css-3.svg'
+      category: 'Testing',
+      items: [{ name: 'Jasmine', iconFileName: 'jasmine.svg' }],
     },
     {
-      name: 'Typescript',
-      iconFileName: 'typescript-icon.svg'
+      category: 'Tools',
+      items: [
+        { name: 'Git', iconFileName: 'git-icon.svg' },
+        { name: 'NPM', iconFileName: 'npm-icon.svg' },
+      ],
     },
     {
-      name: 'NodeJS',
-      iconFileName: 'nodejs-icon.svg'
-    },
-    {
-      name: 'Jasmine',
-      iconFileName: 'jasmine.svg'
-    },
-    {
-      name: 'Laravel',
-      iconFileName: 'laravel.svg'
-    },
-    {
-      name: 'Git',
-      iconFileName: 'git-icon.svg'
-    },
-    {
-      name: 'Figma',
-      iconFileName: 'figma.svg'
-    },
-    {
-      name: 'Bootstrap',
-      iconFileName: 'bootstrap.svg'
-    },
-    {
-      name: 'NPM',
-      iconFileName: 'npm-icon.svg'
-    },
-    {
-      name: 'RxJS',
-      iconFileName: 'reactivex.svg'
+      category: 'Design',
+      items: [{ name: 'Figma', iconFileName: 'figma.svg' }],
     },
   ];
 }

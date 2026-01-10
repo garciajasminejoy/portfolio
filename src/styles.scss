@@ -2,10 +2,20 @@
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
 
+:root {
+    --primary: #009150;
+    --white: #FAFAFA;
+    --black: #353935;
+}
 
 * {
     font-family: "Jost", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    color: var(--black);
+}
+
+body {
+    background-color: var(--white);
 }

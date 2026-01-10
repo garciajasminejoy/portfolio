@@ -1,11 +1,10 @@
 <div class="tech-stack">
-  <h3 class="text-highlight">My Tech Stack</h3>
-  <!-- <p>Technologies I use.</p> -->
+  <h3 class="text-highlight">Tech Stack</h3>
 
   <div class="tech-list">
     @for (techCategory of techStack; track $index) {
     <div class="tech-list--category">
-      <h4 class="tech-list--category">{{ techCategory.category }}</h4>
+      <h5 class="tech-list--category">{{ techCategory.category }}</h5>
       <div class="tech-list--tech-container">
         @for (tech of techCategory.items; track $index) {
         <div class="tech-list--item">

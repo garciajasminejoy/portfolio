@@ -1,11 +1,18 @@
+@use "variables" as *;
+
 .work-history {
-    margin-bottom: 5rem;
+  margin-bottom: 5rem;
 }
 
 .timeline-container {
-    margin-left: 1rem;
+  margin-left: 1rem;
 }
 
 .font-italic {
-    font-style: italic;
+  font-style: italic;
+}
+
+.text-highlight {
+  color: var(--primary);
+  margin-bottom: 24px;
 }

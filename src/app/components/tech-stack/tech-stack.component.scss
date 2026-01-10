@@ -1,11 +1,12 @@
-@use 'variables' as *;
+@use "variables" as *;
 
 .tech-stack {
   margin-bottom: 5rem;
 }
 
 .text-highlight {
-    color: $primary;
+  color: var(--primary);
+  margin-bottom: 24px;
 }
 
 .tech-list {

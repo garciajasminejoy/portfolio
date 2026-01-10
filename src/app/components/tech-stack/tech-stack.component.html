@@ -4,7 +4,7 @@
   <div class="tech-list">
     @for (techCategory of techStack; track $index) {
     <div class="tech-list--category">
-      <h5 class="tech-list--category">{{ techCategory.category }}</h5>
+      <label class="tech-list--category-label">{{ techCategory.category }}</label>
       <div class="tech-list--tech-container">
         @for (tech of techCategory.items; track $index) {
         <div class="tech-list--item">

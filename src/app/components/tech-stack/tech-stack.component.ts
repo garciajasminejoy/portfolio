@@ -25,6 +25,9 @@ export class TechStackComponent {
       items: [
         { name: 'NodeJS', iconFileName: 'nodejs-icon.svg' },
         { name: 'Laravel', iconFileName: 'laravel.svg' },
+        { name: 'NestJS', iconFileName: 'NestJS.svg' },
+        { name: 'PostgreSQL', iconFileName: 'postgres.svg' },
+        { name: 'MySQL', iconFileName: 'mysql.svg' },
       ],
     },
     {

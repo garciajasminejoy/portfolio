@@ -1,7 +1,7 @@
 @use "variables" as *;
 
 .tech-stack {
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 
 .text-highlight {
@@ -30,11 +30,23 @@
   &--tech-container {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 1rem;
+
+    @media screen and (min-width: 779px) {
+      margin-top: 0;
+    }
   }
 
   &--category {
-    display: block;
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+
+    @media screen and (min-width: 779px) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 }
